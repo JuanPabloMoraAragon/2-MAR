@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Solar Mar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="src/styles.css">
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r119/three.min.js"></script>
+    <script src="https://cdn.rawgit.com/mrdoob/three.js/r119/examples/js/controls/OrbitControls.js"></script>
+    
+    <div class="planets">
+      <button id="sun" class="square-button">MAR-2 A</button>
+      <i class="fas fa-sun"></i>
+      <button id="earth" class="square-button">MAR-2 a</button>
+      <i class="fas fa-earth"></i>
+      <button id="reset" class="square-button">MAR-2 System</button>
+      <i class="fas fa-circle"></i>
+    </div>
+    <div class="container">
+    <div id="app"></div>
+    
+    <div id="planet-info" class="planet-info">
+        <button id="closeBtn" class="close-button">x</button>
+        <div class="popup-content">
+                <h2>Planet Information</h2>
+            <p><strong>Composition:</strong> 78% water and 32% land</p>
+            <h3>Characteristics:</h3>
+            <ul>
+                <li><strong>Type Star:</strong> MAR-2 A</li>
+                <li><strong>Moon:</strong> Eva</li>
+                <li><strong>Gravity:</strong> 11 m/s²</li>
+                <li><strong>Mass:</strong> 1.3 Earths</li>
+                <li><strong>Orbital Radius:</strong> 0.05 au</li>
+                <li><strong>Radius P:</strong> 1.09</li>
+                <li><strong>Average Temperature:</strong> 14°C</li>
+                <li><strong>Minimum Temperature:</strong> -84°C</li>
+                <li><strong>Maximum Temperature:</strong> 30°C</li>
+                <li><strong>Time Ratio:</strong> 1 Earth year is approximately 8 days on the planet, 1 Earth day is approximately 4 days on the planet</li>
+                <li><strong>Core Composition:</strong>  75.3% silicate, 24.7% iron and contains hydrogen 8.62*10-5% and water 0.0239%. </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    
+    <script type="module" src="src/index.js"></script>
+</body>
+</html>

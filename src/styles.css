@@ -1,0 +1,104 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative; 
+    height: 850px; 
+    overflow: auto; 
+}
+.sticky-element {
+    position: sticky; 
+    top: 20px; 
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+body {
+    font-family: sans-serif;
+    position: relative;
+    background-color: #445464;
+    z-index: 2; 
+}
+
+
+#canvas-container {
+    width: 100%;
+    height: 50hv; 
+    background-color: #000; 
+    z-index: 2; 
+    
+}
+
+
+.button-container {
+    position: absolute;
+    bottom: 50px; 
+    right: 10px; 
+    display: flex;
+    flex-direction: row; 
+}
+
+.square-button {
+    background-color: #2f3133; 
+    color: #FFFFFF; 
+    border: none;
+    padding: 20px 30px; 
+    margin: 5px;
+    border-radius: 10px; 
+    cursor: pointer;
+}
+
+
+.square-button i {
+    font-size: 24px; 
+    margin-right: 5px; 
+}
+
+
+.planet-info {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left:205px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    z-index: 2; 
+    
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: rgb(12, 12, 12); 
+}
+
+.popup-content h2 {
+    margin-bottom: 10px;
+}
+
+.popup-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.popup-content ul li {
+    margin-bottom: 5px;
+}
+
+.popup-content strong {
+    font-weight: bold;
+}
